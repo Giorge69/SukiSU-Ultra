@@ -33,7 +33,7 @@ config KSU_MANUAL_SU
 config KSU_MULTI_MANAGER_SUPPORT
 	bool "Multi KernelSU manager support"
 	depends on KSU
-	default n
+	default y
 	help
 		Enable multi KernelSU manager support
 
