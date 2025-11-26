@@ -26,7 +26,7 @@ config KSU_ALLOWLIST_WORKAROUND
 config KSU_MANUAL_SU
     bool "Use manual su"
     depends on KSU
-    default y
+    default n
     help
       Use manual su and authorize the corresponding command line and application via prctl
 
