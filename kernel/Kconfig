@@ -26,7 +26,7 @@ config KSU_ALLOWLIST_WORKAROUND
 config KSU_MANUAL_SU
     bool "Use manual su"
     depends on KSU
-    default n
+    default y
     help
       Use manual su and authorize the corresponding command line and application via prctl
 
@@ -50,7 +50,8 @@ config KPM
 
 config KSU_MANUAL_HOOK
 	bool "Hook KernelSU manually"
-	depends on KSU != m && !KSU_SUSFS
+	depends on KSU != m
+	default y
 	help
 	  If enabled, Hook required KernelSU syscalls with manually-patched function.
 
